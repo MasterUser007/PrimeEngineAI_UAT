@@ -1,0 +1,21 @@
+﻿name: Reflex UAT Sync
+on:
+  push:
+    paths:
+      - uat_triggers/**
+jobs:
+  uat_sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Add UAT Entry
+        run: |
+          ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          token=$(basename $(ls -t uat_triggers/reflex-* | head -n1))
+          echo "📥 $token triggered at $ts"
+          jq --arg token "$token" --arg ts "$ts" \
+            '.tests += [{token: $token, date: $ts, status: "pending"}]' \
+            .uat_index.json > tmp && mv tmp .uat_index.json
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "📥 UAT Check-In for ${{ github.actor }}"
