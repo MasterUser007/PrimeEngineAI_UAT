@@ -1,0 +1,19 @@
+﻿name: UAT Test Runner
+on:
+  push:
+    paths:
+      - engines/**
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run PrimeEngineAI Engine
+        shell: pwsh
+        run: |
+          mkdir -Force uat_results
+          ./engines/PrimeEngineAI.ps1 | Tee-Object -FilePath uat_results/log-$Env:GITHUB_RUN_ID.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: uat-results
+          path: uat_results/log-*.txt

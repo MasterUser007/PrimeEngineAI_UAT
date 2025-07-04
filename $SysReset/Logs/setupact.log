@@ -1,0 +1,205 @@
+﻿2024-09-09 17:16:28, Info                         LogSession: Starting a new log session at [C:\$SysReset\Logs]
+2024-09-09 17:16:28, Info                         Registry: Loading SOFTWARE hive from online OS
+2024-09-09 17:16:28, Info                         ResetCreateSession: Succeeded
+2024-09-09 17:16:28, Info                         OnlineUI: Reset session created successfully
+2024-09-09 17:16:46, Info                         OnlineUI: Check Reset Disable Flag
+2024-09-09 17:16:47, Info                         Session: Checking main OS for a test ID
+2024-09-09 17:16:47, Info                         Telemetry: Checking [C:] for a test ID
+2024-09-09 17:16:47, Info                         Registry: Loading SOFTWARE hive from online OS
+2024-09-09 17:16:47, Info                         Telemetry: No test ID present
+2024-09-09 17:16:47, Info                         Session: Reading system configuration
+2024-09-09 17:16:47, Info                         SenseContext: Opening system BCD
+2024-09-09 17:16:47, Info                         SenseContext: Reading WinRE config
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] Enter WinReGetConfig
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] Parameters: configWinDir: NULL
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] WinRE config file path: C:\Windows\system32\Recovery\ReAgent.xml
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] Update enhanced config info is enabled.
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] WinRE is installed
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk1\partition4\Recovery\WindowsRE
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] System is WimBoot: FALSE
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] WinRE image validated
+2024-09-09 17:16:47, Info                         [SystemSettingsAdminFlows.exe] Exit WinReGetConfig return value: 1, last error: 0x2
+2024-09-09 17:16:47, Info                         SenseContext: Checking whether the target OS [C:\] is accessible ...
+2024-09-09 17:16:47, Info                         SenseContext: Target is accessible, will load registry hives
+2024-09-09 17:16:47, Info                         SenseContext: Loading target SOFTWARE hive
+2024-09-09 17:16:47, Info                         Registry: Loading SOFTWARE hive from online OS
+2024-09-09 17:16:47, Info                         SenseContext: Loading target SYSTEM hive
+2024-09-09 17:16:47, Info                         Registry: Loading SYSTEM hive from online OS
+2024-09-09 17:16:47, Info                         SenseContext: Loaded
+2024-09-09 17:16:47, Info                         SystemInfo: Reading BCD settings
+2024-09-09 17:16:47, Info                         SystemInfo: Locating the boot device
+2024-09-09 17:16:48, Info                         SystemInfo: Getting firmware info
+2024-09-09 17:16:48, Info                         SystemInfo: Reading host version number
+2024-09-09 17:16:48, Info                         SystemInfo: Searching for migration XML
+2024-09-09 17:16:48, Info                         SystemInfo: Reading power configuration
+2024-09-09 17:16:48, Info                         SystemInfo: Checking whether target OS volume is accessible ...
+2024-09-09 17:16:48, Info                         SystemInfo: The target OS volume is accessible
+2024-09-09 17:16:48, Info                         SystemInfo: Detecting target BitLocker state
+2024-09-09 17:16:48, Info                         SystemInfo: Checking whether target is healthy
+2024-09-09 17:16:48, Info                         SystemInfo: Checking if narrator auto start reg key turned on
+2024-09-09 17:16:48, Info                         SystemInfo: Reading target build information
+2024-09-09 17:16:48, Warning                      0x80070002 in PbrGetOSMetadata (base\reset\engine\scenario\src\sensetargetos.cpp:412): Failed to read Compact value from target OS, assuming not compact
+2024-09-09 17:16:48, Info                         SystemInfo: Reading target's reset policy flags
+2024-09-09 17:16:48, Info                         SystemInfo: Searching target for OEM extensibility
+2024-09-09 17:16:48, Warning                      0x80070002 in PushButtonReset::WofOverlay::EnumOverlays (base\reset\util\src\wofoverlay.cpp:64): WofEnumEntries failed, assuming no overlays on volume [\\?\Volume{862a8ff5-2c8e-47a7-929e-0d9f9086ebc4}]
+2024-09-09 17:16:48, Info                         SystemInfo: Checking whether target OS is Signature Edition ...
+2024-09-09 17:16:48, Error                        0x80070002 in PushButtonReset::RegKey::HasValue (base\reset\util\src\registry.cpp:187): Failed to load subkey at [Microsoft\Windows\Signature][gle=0x000003e6]
+2024-09-09 17:16:48, Info                         SystemInfo: Get reconstruction version from registry key
+2024-09-09 17:16:48, Error                        0x80070002 in PbrGetRestoreToBaselineVal (base\reset\engine\scenario\src\sensetargetos.cpp:65): Does not find registry key of PushButtonReset[gle=0x000003e6]
+2024-09-09 17:16:48, Info                         SystemInfo: Failed to get the reconstruction version from registry key. Use Latest as default.
+2024-09-09 17:16:48, Info                         SystemInfo: RestoreToBaseline [False]
+2024-09-09 17:16:48, Error                        0x80070002 in PbrGetEnablePreviewBuilds (base\reset\engine\scenario\src\sensetargetos.cpp:915): Unable to get the EnablePreviewBuilds value from the registry[gle=0x000003e6]
+2024-09-09 17:16:48, Info                         SystemInfo: Failed to get if enable preview builds is set
+2024-09-09 17:16:48, Info                         SystemInfo: Detecting Team OS
+2024-09-09 17:16:48, Info                         Registry: Loading SOFTWARE hive from online OS
+2024-09-09 17:16:48, Info                         SystemInfo: Detecting Windows-to-Go
+2024-09-09 17:16:48, Info                         SystemInfo: Locating WinRE
+2024-09-09 17:16:48, Info                         SystemInfo: Detecting current WinRE's build number
+2024-09-09 17:16:48, Info                         SystemInfo: Detecting Narrator Running
+2024-09-09 17:16:48, Warning                      IsNarratorRunning: Error finding window NarratorUIClass; HR = 0x80070002
+2024-09-09 17:16:48, Warning                      0x80070002 in PbrSenseNarrator (base\reset\engine\scenario\src\sensemisc.cpp:323): Failed to query whether narrator is running
+2024-09-09 17:16:48, Info                         Session: Finished reading SystemInfo
+2024-09-09 17:16:48, Info                         -- Begin SystemInfo dump
+2024-09-09 17:16:48, Info                            [PowerSourceIsUnreliable]: [True]
+2024-09-09 17:16:48, Info                            [HostVersionMajor]: [10]
+2024-09-09 17:16:48, Info                            [HostVersionMinor]: [0]
+2024-09-09 17:16:48, Info                            [HostBuild]: [22621]
+2024-09-09 17:16:48, Info                            [HostRevision]: [1]
+2024-09-09 17:16:48, Info                            [HostBranch]: [WinBuild]
+2024-09-09 17:16:48, Info                            [BootLocale]: [en-US]
+2024-09-09 17:16:48, Info                            [BootTimeout]: [0]
+2024-09-09 17:16:48, Info                            [BootVolume]: [C:\]
+2024-09-09 17:16:48, Info                            [BootDrive]: [C]
+2024-09-09 17:16:48, Info                            [SecureBootEnabled]: [True]
+2024-09-09 17:16:48, Info                            [IsTeamOS]: [False]
+2024-09-09 17:16:48, Info                            [IsWindowsToGo]: [False]
+2024-09-09 17:16:48, Info                            [IsSafeMode]: [False]
+2024-09-09 17:16:48, Info                            [IsWindowsPE]: [False]
+2024-09-09 17:16:48, Info                            [RamdiskDevice]: []
+2024-09-09 17:16:48, Info                            [RamdiskVolumeRoot]: []
+2024-09-09 17:16:48, Info                            [RamdiskPath]: []
+2024-09-09 17:16:48, Info                            [WinREAvailable]: [True]
+2024-09-09 17:16:48, Info                            [WinREVolumeRoot]: [\\?\Volume{1566d043-1e2f-4f9b-ae98-00b2e8daf752}\]
+2024-09-09 17:16:48, Info                            [WinREPath]: [\Recovery\WindowsRE\winre.wim]
+2024-09-09 17:16:48, Info                            [WinREBootEntry]: [{577486C4-7E91-11EE-AF0E-3C18A01C7882}]
+2024-09-09 17:16:48, Info                            [WinREVersionMajor]: [10]
+2024-09-09 17:16:48, Info                            [WinREVersionMinor]: [0]
+2024-09-09 17:16:48, Info                            [WinREBuild]: [22621]
+2024-09-09 17:16:48, Info                            [WinRERevision]: [1]
+2024-09-09 17:16:48, Info                            [WinREBranch]: [WinBuild]
+2024-09-09 17:16:48, Info                            [BinaryTrusted]: [True]
+2024-09-09 17:16:48, Info                            [StagedWinREAvailable]: [False]
+2024-09-09 17:16:48, Info                            [StagedWinREPath]: []
+2024-09-09 17:16:48, Info                            [ArchivedWinREAvailable]: [False]
+2024-09-09 17:16:48, Info                            [ArchivedWinREPath]: []
+2024-09-09 17:16:48, Info                            [DownlevelWinREAvailable]: [False]
+2024-09-09 17:16:48, Info                            [DownlevelWinREVolumeRoot]: []
+2024-09-09 17:16:48, Info                            [DownlevelWinREPath]: []
+2024-09-09 17:16:48, Info                            [DownlevelWinREVersionMajor]: [0]
+2024-09-09 17:16:48, Info                            [DownlevelWinREVersionMinor]: [0]
+2024-09-09 17:16:48, Info                            [DownlevelWinREBuild]: [0]
+2024-09-09 17:16:48, Info                            [DownlevelWinRERevision]: [0]
+2024-09-09 17:16:48, Info                            [DownlevelWinREBranch]: []
+2024-09-09 17:16:48, Info                            [RecoveryImageAvailable]: [False]
+2024-09-09 17:16:48, Info                            [RecoveryImageVolumeRoot]: []
+2024-09-09 17:16:48, Info                            [RecoveryImagePath]: []
+2024-09-09 17:16:48, Info                            [RecoveryImageIndex]: [0]
+2024-09-09 17:16:48, Info                            [RecoveryImageReferencePaths]: [[0] items]
+2024-09-09 17:16:48, Info                            [RecoveryImageVersionMajor]: [0]
+2024-09-09 17:16:48, Info                            [RecoveryImageVersionMinor]: [0]
+2024-09-09 17:16:48, Info                            [RecoveryImageBuild]: [0]
+2024-09-09 17:16:48, Info                            [RecoveryImageRevision]: [0]
+2024-09-09 17:16:48, Info                            [RecoveryImageBranch]: []
+2024-09-09 17:16:48, Info                            [RecoveryImageEdition]: []
+2024-09-09 17:16:48, Info                            [RecoveryImageArchitecture]: [0]
+2024-09-09 17:16:48, Info                            [RecoveryImageOEMResetConfigPath]: []
+2024-09-09 17:16:48, Info                            [TargetAccessible]: [True]
+2024-09-09 17:16:48, Info                            [TargetInstallHealthy]: [True]
+2024-09-09 17:16:48, Info                            [TargetVolumeCapacity]: [122702266368]
+2024-09-09 17:16:48, Info                            [TargetSpaceRemaining]: [50915487744]
+2024-09-09 17:16:48, Info                            [TargetEncrypted]: [False]
+2024-09-09 17:16:48, Info                            [TargetEncryptionSuspended]: [False]
+2024-09-09 17:16:48, Info                            [TargetLocked]: [False]
+2024-09-09 17:16:48, Info                            [TargetVersionMajor]: [10]
+2024-09-09 17:16:48, Info                            [TargetVersionMinor]: [0]
+2024-09-09 17:16:48, Info                            [TargetBuild]: [22621]
+2024-09-09 17:16:48, Info                            [TargetRevision]: [4112]
+2024-09-09 17:16:48, Info                            [TargetBranch]: [ni_release]
+2024-09-09 17:16:48, Info                            [TargetCurrentBuild]: [22631]
+2024-09-09 17:16:48, Info                            [TargetBuildLab]: [22621.1.amd64fre.ni_release.220506-1250]
+2024-09-09 17:16:48, Info                            [TargetProductName]: [Windows 10 Pro]
+2024-09-09 17:16:48, Info                            [TargetEdition]: [Professional]
+2024-09-09 17:16:48, Info                            [TargetArchitecture]: [9]
+2024-09-09 17:16:48, Info                            [TargetInstallType]: [0]
+2024-09-09 17:16:48, Info                            [TargetHasRedirectedProfiles]: [False]
+2024-09-09 17:16:48, Info                            [TargetCompact]: [False]
+2024-09-09 17:16:48, Info                            [TargetIsSignature]: [False]
+2024-09-09 17:16:48, Info                            [TargetRunsNarratorOnLogon]: [False]
+2024-09-09 17:16:48, Info                            [PolicyDisablesReset]: [False]
+2024-09-09 17:16:48, Info                            [PolicyDisableCleanPC]: [False]
+2024-09-09 17:16:48, Info                            [PolicyDisablesCustomizations]: [False]
+2024-09-09 17:16:48, Info                            [PolicyDisablesDriverMigration]: [False]
+2024-09-09 17:16:48, Info                            [PolicyDisablesReconstructToLatest]: [False]
+2024-09-09 17:16:48, Info                            [PolicyEnablesPreviewBuilds]: [False]
+2024-09-09 17:16:48, Info                            [TargetHydratedProvPackages]: [[1] items]
+2024-09-09 17:16:48, Info                            -> [0]: [C:\Recovery\Customizations\USMT.PPKG]
+2024-09-09 17:16:48, Info                            [TargetDehydratedProvPackages]: [[0] items]
+2024-09-09 17:16:48, Info                            [TargetProvPackageInstallOrder]: []
+2024-09-09 17:16:48, Info                            [TargetRuntimeProvPackages]: [[0] items]
+2024-09-09 17:16:48, Info                            [TargetOEMResetConfigPath]: [C:\Recovery\OEM\ResetConfig.xml]
+2024-09-09 17:16:48, Info                            [TargetOEMAutoApplyPath]: []
+2024-09-09 17:16:48, Info                            [RamdiskMigrationXML]: []
+2024-09-09 17:16:48, Info                            [TargetMigrationXML]: [C:\Windows\System32\srms.dat]
+2024-09-09 17:16:48, Info                            [TargetReprovisionMigrationXML]: [C:\Windows\System32\srms-apr-v.dat]
+2024-09-09 17:16:48, Info                            [IsRecoveryMediaBoot]: [False]
+2024-09-09 17:16:48, Info                            [MediaRoot]: []
+2024-09-09 17:16:48, Info                            [MediaImageRoot]: []
+2024-09-09 17:16:48, Info                            [MediaProvPackageRoot]: []
+2024-09-09 17:16:48, Info                            [MediaExtensibilityRoot]: []
+2024-09-09 17:16:48, Info                            [MediaAutoApplyRoot]: []
+2024-09-09 17:16:48, Info                            [MediaPayloadInfoRoot]: []
+2024-09-09 17:16:48, Info                            [MediaDeviceInventoryDir]: []
+2024-09-09 17:16:48, Info                            [MediaDriversRoot]: []
+2024-09-09 17:16:48, Info                            [MediaBootWimPath]: []
+2024-09-09 17:16:48, Info                            [MediaWinREPath]: []
+2024-09-09 17:16:48, Info                            [MediaDownlevelWinREPath]: []
+2024-09-09 17:16:48, Info                            [MediaOEMResetConfigPath]: []
+2024-09-09 17:16:48, Info                            [MediaAutoResetConfigPath]: []
+2024-09-09 17:16:48, Info                            [MediaRecoveryImageNames]: [[0] items]
+2024-09-09 17:16:48, Info                            [MediaComponentStoreImagePaths]: [[0] items]
+2024-09-09 17:16:48, Info                            [MediaProvPackageNames]: [[0] items]
+2024-09-09 17:16:48, Info                            [MediaProvPackageInstallOrder]: []
+2024-09-09 17:16:48, Info                            [MediaSingleInstancedProvPackages]: [[0] items]
+2024-09-09 17:16:48, Info                            [MediaTargetDisk]: [0]
+2024-09-09 17:16:48, Info                            [MediaTargetOsPartition]: [0]
+2024-09-09 17:16:48, Info                            [NarratorRunning]: [False]
+2024-09-09 17:16:48, Info                            [SystemDefaultEntry]: [{34741DAF-7E96-11EE-A2CE-3C18A01C7882}]
+2024-09-09 17:16:48, Info                         -- End SystemInfo dump
+2024-09-09 17:16:48, Info                         OnlineUI: Validating scenario
+2024-09-09 17:16:48, Info                         ResetValidateScenario: Scenario: [0] Target: [C:]
+2024-09-09 17:16:48, Info                         Session: Returning cached system information
+2024-09-09 17:16:48, Info                         ResetValidateScenario: Supported: [Yes]
+2024-09-09 17:16:48, Info                         OnlineUI: Validation passed
+2024-09-09 17:16:48, Info                         Prepare list of GUID paths for non-OS data volumes
+2024-09-09 17:16:48, Info                         OnlineUI: Scanning for data volumes
+2024-09-09 17:16:48, Info                         ResetGetDataVolumes: Enumerating host machine data volumes
+2024-09-09 17:16:48, Info                         Session: Returning cached system information
+2024-09-09 17:16:50, Warning                      0x80070490 in PushButtonReset::TestFlag::Get (base\reset\engine\session\src\testflag.cpp:50): Test flag not set: [FormatExclude]
+2024-09-09 17:16:50, Info                         DataVolumes: Found [\\?\Volume{f62784a3-c771-42b7-8d1d-3adda7cf29a0}]: Disk [0] Partition [2] Drive [D]
+2024-09-09 17:16:50, Info                         ResetDataVolumes: Found [1] data volume(s)
+2024-09-09 17:16:50, Info                         OnlineUI: Found [1] data volumes
+2024-09-09 17:16:50, Info                         ResetCleanPCBlocked: Determine whether device blocks CleanPC
+2024-09-09 17:16:50, Info                         Session: Returning cached system information
+2024-09-09 17:16:50, Info                         ResetHasCustomizations: Determine whether device has OEM customizations
+2024-09-09 17:16:50, Info                         Session: Returning cached system information
+2024-09-09 17:16:50, Info                         Has customizations: Found provisioning packages
+2024-09-09 17:16:50, Info                         OnlineUI: Determining if payload download is enabled
+2024-09-09 17:16:50, Info                         Onesettings: Querying Prod server settings-win.data.microsoft.com
+2024-09-09 17:16:51, Info                         ResetPayloadEnabled: payload enabled [True]
+2024-09-09 17:18:01, Info                         OnlineUI: User cancelled reset
+2024-09-09 17:18:01, Info                         ResetNotifyCancel: User cancelled on page [OnlineCloudRecoveryOption]
+2024-09-09 17:18:01, Info                         Telemetry: Flushed all pending [PushButtonReset] events for [C:\$SysReset\Logs\PushButtonReset.etl]
+2024-09-09 17:18:01, Info                         Submit trace file [C:\$SysReset\Logs\PushButtonReset.etl] to [C:\ProgramData\Microsoft\Diagnosis\ETLLogs]
+2024-09-09 17:18:04, Info                         OnlineUI: Releasing reset session
+2024-09-09 17:18:04, Info                         ResetReleaseSession: Releasing session
+2024-09-09 17:18:04, Info                         Cleanup cloud payload folder [C:\$SysReset\CloudImage]
